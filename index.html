@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test Bundle</title>
+</head>
+
+<body>
+<script src="node_modules/requirejs/require.js"></script>
+<script>
+require.config({
+    baseUrl: './build',
+    bundles: {
+        libs: ['vue', 'jquery', 'libs/slick-1.8.1/slick'],
+        common: ['common', 'util']
+    }
+});
+</script>
+<script>
+require(['one/module-a'], function (moduleA) {
+    moduleA.start();
+});
+</script>
+</body>
+</html>
