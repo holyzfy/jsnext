@@ -1,0 +1,9 @@
+{
+    "presets": ["env"],
+    "plugins": [
+        "syntax-dynamic-import",
+        "dynamic-import-amd",
+        "add-module-exports",
+        "transform-es2015-modules-amd"
+    ]
+}
