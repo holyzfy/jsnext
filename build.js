@@ -19,5 +19,6 @@
             include: ['common', 'util'],
             create: true
         }
-    ]
+    ],
+    bundlesConfigOutFile: '../production.config.js'
 }
