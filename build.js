@@ -7,7 +7,7 @@
         'vue': '../libs/vue'
     },
     optimizeCss: 'none',
-    optimize: 'none',
+    // optimize: 'none',
     modules: [
         {
             name: 'libs',
