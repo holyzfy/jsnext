@@ -1,6 +1,6 @@
 # jsnext
 
-一个简单的前端工程示例
+一个简单的前端工程示例, https://holyzfy.github.io/jsnext/
 
 ## 安装
 
