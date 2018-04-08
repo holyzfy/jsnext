@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "jsnext": "./node_modules/.bin/babel -d js -w --source-maps inline jsnext",
+    "jsnext": "./node_modules/.bin/babel -d js --source-maps inline jsnext",
+    "dev": "./node_modules/.bin/nodemon --watch jsnext --watch templates --exec npm run jsnext -e js,html",
     "prebuild": "rm -rf build",
     "build": "node_modules/.bin/r.js -o build.js",
     "postbuild": "cp -r libs build",
@@ -20,8 +21,10 @@
     "babel-cli": "~6.26.0",
     "babel-plugin-add-module-exports": "~0.2.1",
     "babel-plugin-dynamic-import-amd": "github:rtasarz/babel-plugin-dynamic-import-amd",
+    "babel-plugin-inline-import": "~2.0.6",
     "babel-plugin-syntax-dynamic-import": "~6.18.0",
     "babel-plugin-transform-es2015-modules-amd": "~6.24.1",
-    "babel-preset-env": "~1.6.1"
+    "babel-preset-env": "~1.6.1",
+    "nodemon": "~1.17.3"
   }
 }

@@ -1,6 +1,9 @@
 {
     "presets": ["env"],
     "plugins": [
+        ["inline-import", {
+            "extensions": "html"
+        }],
         "syntax-dynamic-import",
         "dynamic-import-amd",
         "add-module-exports",
